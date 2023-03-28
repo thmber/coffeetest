@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container img{
+            width: 50px;
+            height: 50px;
+        }
+        .cup{
+            position: absolute;
+        }
+        .steam{
+            position: absolute;
+            opacity: 0;
+            animation: steam 1.5s infinite;
+            transform: translateY(6px);
+        }
+      
+        @keyframes steam {
+            0%{
+                opacity: 0.01;
+                transform: translateY(6px);
+            }
+            50%{
+                opacity: 0.4;
+            }
+            100%{
+                opacity: 0.01;
+                transform: translateY(-3px);
+            }
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <img src="cup_join.png" alt="" class="cup">
+        <img src="cup-steam.png" alt="" class="steam">
+        
+    </div>
+
+  
+</body>
+</html>
